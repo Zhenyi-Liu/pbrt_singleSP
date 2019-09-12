@@ -42,6 +42,7 @@
 #include "progressreporter.h"
 #include "camera.h"
 #include "stats.h"
+#include "reflection.h"
 
 namespace pbrt {
 
@@ -67,6 +68,7 @@ Spectrum UniformSampleAllLights(const Interaction &it, const Scene &scene,
             // Use a single sample for illumination from _light_
             Point2f uLight = sampler.Get2D();
             Point2f uScattering = sampler.Get2D();
+            
             L += EstimateDirect(it, uScattering, *light, uLight, scene, sampler,
                                 arena, handleMedia);
         } else {
@@ -125,7 +127,7 @@ Spectrum EstimateDirect(const Interaction &it, const Point2f &uScattering,
         if (it.IsSurfaceInteraction()) {
             // Evaluate BSDF for light sampling strategy
             const SurfaceInteraction &isect = (const SurfaceInteraction &)it;
-            f = isect.bsdf->f(isect.wo, wi, bsdfFlags) *
+            f  = isect.bsdf->f(isect.wo, wi, bsdfFlags) *
                 AbsDot(wi, isect.shading.n);
             scatteringPdf = isect.bsdf->Pdf(isect.wo, wi, bsdfFlags);
             VLOG(2) << "  surf f*dot :" << f << ", scatteringPdf: " << scatteringPdf;
@@ -273,7 +275,13 @@ void SamplerIntegrator::Render(const Scene &scene) {
                 // debugging.
                 if (!InsideExclusive(pixel, pixelBounds))
                     continue;
-
+                // Added by Zhenyi
+                // scene.light.clear()
+                // Check whether it's a laser simulator, A flag is needed here.
+                // if laserflag
+                // light2world = 
+                // MediumInterface mi = graphicsState.CreateMediumInterface();
+                // scene.light = CreateLaserLight(light2world, mediumInterface.outside, paramSet);
                 do {
                     // Initialize _CameraSample_ for current sample
                     CameraSample cameraSample =
@@ -289,6 +297,7 @@ void SamplerIntegrator::Render(const Scene &scene) {
 
                     // Evaluate radiance along camera ray
                     Spectrum L(0.f);
+
                     if (rayWeight > 0) L = Li(ray, scene, *tileSampler, arena);
 
                     // Issue warning if unexpected radiance value returned

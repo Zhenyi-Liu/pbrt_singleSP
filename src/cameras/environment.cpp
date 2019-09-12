@@ -146,7 +146,7 @@ namespace pbrt {
         
         // Parameters added by Trisha to support omnistereo panoramas. Much of this is taken directly from Blender Cycles.
         Float ipd = params.FindOneFloat("ipd", 0.f);
-        Float poleMergeTo = params.FindOneFloat("poleMergeAngleTo", 90.f);
+        Float poleMergeTo = params.FindOneFloat("poleMergeAngleTo", 90.f);//90.f
         Float poleMergeFrom = params.FindOneFloat("poleMergeAngleFrom", 90.f);
         Float convergenceDistance = params.FindOneFloat("convergencedistance", Infinity);
         

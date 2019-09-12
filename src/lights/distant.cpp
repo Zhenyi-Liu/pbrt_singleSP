@@ -94,6 +94,7 @@ void DistantLight::Pdf_Le(const Ray &, const Normal3f &, Float *pdfPos,
 std::shared_ptr<DistantLight> CreateDistantLight(const Transform &light2world,
                                                  const ParamSet &paramSet) {
     Spectrum L = paramSet.FindOneSpectrum("L", Spectrum(1.0));
+    L.PrintSpectrum();
     Spectrum sc = paramSet.FindOneSpectrum("scale", Spectrum(1.0));
     Point3f from = paramSet.FindOnePoint3f("from", Point3f(0, 0, 0));
     Point3f to = paramSet.FindOnePoint3f("to", Point3f(0, 0, 1));

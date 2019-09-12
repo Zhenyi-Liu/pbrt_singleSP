@@ -56,7 +56,8 @@ Film::Film(const Point2i &resolution, const Bounds2f &cropWindow,
       filename(filename),
       scale(scale),
       maxSampleLuminance(maxSampleLuminance),
-      spectralFlag(sf){
+      spectralFlag(sf),
+      datatype(dt){
     // Compute film image bounds
     croppedPixelBounds =
         Bounds2i(Point2i(std::ceil(fullResolution.x * cropWindow.pMin.x),
@@ -228,7 +229,18 @@ void Film::WriteImage(Float splatScale) {
                      
         // spectralData holds all the values in the multispectral image
         std::unique_ptr<Float[]> spectralData(new Float[nSpectralSamples * croppedPixelBounds.Area()]);
-            
+        
+        // Choose write out number of samples based on datatype. --Zhenyi
+        int nDataSamples = 31;
+        if (datatype.compare("depth")==0 || datatype.compare("mesh")==0
+            || datatype.compare("material")==0) {
+            nDataSamples = 1;}
+        else if (datatype.compare("coordinates")==0) {
+            nDataSamples = 3;}
+        // lidar output: [x, y, z, reflectance, irradiance, instance ID]
+        else if (datatype.compare("pointcloud")==0) {
+            nDataSamples = 6;}
+        
         int offset = 0;
         for (Point2i p : croppedPixelBounds) {
                 
@@ -345,10 +357,13 @@ Film *CreateFilm(const ParamSet &params, std::unique_ptr<Filter> filter) {
     Float diagonal = params.FindOneFloat("diagonal", 35.);
     Float maxSampleLuminance = params.FindOneFloat("maxsampleluminance",
                                                     Infinity);
+    
     bool spectralFlag = params.FindOneBool("spectralFlag", true);
-        
+    
+    std::string datatype = params.FindOneString("datatype", "spectral");
+    
     return new Film(Point2i(xres, yres), crop, std::move(filter), diagonal,
-                    filename, scale, spectralFlag, maxSampleLuminance);
+                    filename, scale, spectralFlag, datatype, maxSampleLuminance);
 }
     
 }  // namespace pbrt

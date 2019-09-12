@@ -1,0 +1,3163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		178EB044966C4766BAA1FF97 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4916C25EB3FC4F658F8CB848 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				17F379D14F4D4F78940BFE5B /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				54F98ACBAA13491EAD89DB1A /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		3DB29E7182A54E8693501EE9 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8911BF17CB41437E8E1A183C /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				9FB41412EB8940CAB308F425 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				CF742421D81A482A8E318D09 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		6726094753284BF3994DFCB4 /* doxygen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B3EAA9EF1002499890B8A8F0 /* Build configuration list for PBXAggregateTarget "doxygen" */;
+			buildPhases = (
+				A1D01E18856D4262B7D43EDE /* CMake Rules */,
+			);
+			dependencies = (
+				18C815611CCD4A32AA3C3AED /* PBXTargetDependency */,
+			);
+			name = doxygen;
+			productName = doxygen;
+		};
+		6AC332235F0B4B94A0226458 /* doc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 20FF57D85AA74D33A4E0B9BE /* Build configuration list for PBXAggregateTarget "doc" */;
+			buildPhases = (
+				A2766BED445347B6A26CA3AD /* CMake Rules */,
+			);
+			dependencies = (
+				A5005DCA2FE946F791E7D223 /* PBXTargetDependency */,
+			);
+			name = doc;
+			productName = doc;
+		};
+		7F891B56B1D74619B983212D /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C0F85E402FC645A7A581A983 /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				8D2D47EDFE5E43729FEBFA7C /* CMake Rules */,
+			);
+			dependencies = (
+				55F85E0D361D4B30908A9CEF /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		8356F834ADBB49CAAA0C131B /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 665F280A047848A7ADBFEE7B /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				5EBA5D8E24CD428EABDF2B51 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		922D728CCD1E454FA8CCE5B1 /* Nightly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5C6EE98B8CCE42DC9B57856F /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildPhases = (
+				7F1C78969DA74D1F8BEBF2DA /* CMake Rules */,
+			);
+			dependencies = (
+				397749BBDBD049F2B4601748 /* PBXTargetDependency */,
+			);
+			name = Nightly;
+			productName = Nightly;
+		};
+		BA6DF883CFE54E43929A11BD /* Continuous */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CCC3B25EED2A4E4C8D4C54A4 /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildPhases = (
+				F6581371B6134063A3396D77 /* CMake Rules */,
+			);
+			dependencies = (
+				C6D929390B8A49DB8D077276 /* PBXTargetDependency */,
+			);
+			name = Continuous;
+			productName = Continuous;
+		};
+		C637182E8F644DE0AA995E19 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CB8F58E858B049678FDCA5D3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				204173AF7A294FD881996D0D /* CMake Rules */,
+			);
+			dependencies = (
+				B0C9DFDFAC1A44E9B874C138 /* PBXTargetDependency */,
+				77CD2608614949808CE1FF82 /* PBXTargetDependency */,
+				1BC2EEDCC50743A6BCD447C7 /* PBXTargetDependency */,
+				DAA436683F9648E28A939E67 /* PBXTargetDependency */,
+				D27923919B8A48F2B003E884 /* PBXTargetDependency */,
+				9D81B7CDD7964EF9A80075BB /* PBXTargetDependency */,
+				6561DF5276FE4B2FA7590210 /* PBXTargetDependency */,
+				4260C99E25974831BECBAB1C /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D54D191E9CBE443B8BA356A0 /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F368A16CCA9A4B629BE96864 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				A83D956C2F97429D847A9F2B /* CMake Rules */,
+			);
+			dependencies = (
+				68D1FD27636B4D2793CA03EB /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8A8FEB0D05F247BB9337DC78 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				08D0F225CB2F4025849C3BC5 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		08D2773F7EB0478A8E7292F8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4F06FC7018564709BF8B9D99 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		3094E5398FC4493883A76644 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 49A0B2CA74FF42F8AC301A90 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		3A4FA0E9E30543FF8D595424 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 748DF7526F164AE489F9B496 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		42CE530A131A41E4A8485762 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */ = {isa = PBXBuildFile; fileRef = A89F9274DDDA475FA77FD454 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		539384EC2E1A4FD2870939CC /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E26E9DE852474C61BBE788FE /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		557C3FEE75444FC2822F9925 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/ptxinfo.cpp */ = {isa = PBXBuildFile; fileRef = 2C63FF8FBE2E4D64A22C88DE /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/ptxinfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5B2EFCE9025E42318AA4B4A8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexCache.cpp */ = {isa = PBXBuildFile; fileRef = A644A9C48007434BBF9C6CD8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexCache.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6311E01FFF8C4838A4F3DDC9 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */ = {isa = PBXBuildFile; fileRef = 198E6C2EFFFB43B9981B5836 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6385F232A4774BF3A4C7ABF2 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/halftest.cpp */ = {isa = PBXBuildFile; fileRef = 0A2249A6FD924449B6BDEB8D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/halftest.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		67CC9E512390412786200F63 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 69E171B1FC3A41A29CE2137D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		796FAA13081E4C1C94B87757 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexReader.cpp */ = {isa = PBXBuildFile; fileRef = 37860103766B477C9A5FA467 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexReader.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		814591EE6E47412D8D074F9C /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */ = {isa = PBXBuildFile; fileRef = 1B7F57208D6D46D6A6430B88 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		87BA91ECDC8D49FE8F02E199 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexFilters.cpp */ = {isa = PBXBuildFile; fileRef = 78FE1BC6B48341EF89731F9A /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexFilters.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8F56C0B6E6BF4B3AB64EF081 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/ftest.cpp */ = {isa = PBXBuildFile; fileRef = D7C92B1BF3DE48FDA420FD2D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/ftest.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A817EA9A767F47BCA2B8AD3C /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/wtest.cpp */ = {isa = PBXBuildFile; fileRef = C1208AC43EC1457C8AAC24E8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/wtest.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		ACBAA8B2F9E344AA9FEF2EE4 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/rtest.cpp */ = {isa = PBXBuildFile; fileRef = 5F7521A3357043DF979948C2 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/rtest.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B8EDB8DB06644A438FE11385 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexWriter.cpp */ = {isa = PBXBuildFile; fileRef = DAA40F0A039E466FAF7E360E /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CECFAB9C98974B86903C15F2 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexHalf.cpp */ = {isa = PBXBuildFile; fileRef = C46CAA8C27164138BF43F0B0 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexHalf.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E401F5ADC7334B6E9C8A702C /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexUtils.cpp */ = {isa = PBXBuildFile; fileRef = 8B0936BCB7A843CA9EF96DE1 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexUtils.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F526A0F95FDD4EC39D617CCC /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */ = {isa = PBXBuildFile; fileRef = 0C99280E7B8F4025AD01C7CF /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F62F4D39286E45A8B36A6B26 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5314C526CA124A92A806DCAC /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0962B935515C4F3C95486CB7 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		1CF7A4F23B7049E09D949BBD = {
+			isa = PBXBuildStyle;
+		};
+		5B5E6585E68A4E9CB6445BE8 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		76E1E55C4F004A9C932279E9 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		F5FA9075A2FF4A1AAFEAA1D8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1566F3674BEE45BD8CE9F3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF975AB3DD4D4F67A105C455;
+			remoteInfo = halftest;
+		};
+		1D1D715B53AC455EACA269CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E157ACDCFD04510AAA55D2B;
+			remoteInfo = Ptex_static;
+		};
+		274CF9B1F47E4B69A6D77E48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		28489A120F304FC0B32C98C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		2AB24A7B7E6E49E991ACD64F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E157ACDCFD04510AAA55D2B;
+			remoteInfo = Ptex_static;
+		};
+		2BD7ACA975E74D9482D52826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		2E57DE09C414404DA123BA79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797D15849FC14400A1A06599;
+			remoteInfo = ftest;
+		};
+		322778A9A0B04EB38D165CC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C637182E8F644DE0AA995E19;
+			remoteInfo = ALL_BUILD;
+		};
+		49389E4AA0DE4AE48D9C478C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E157ACDCFD04510AAA55D2B;
+			remoteInfo = Ptex_static;
+		};
+		4C85F076A3A448E99F7D0338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AC332235F0B4B94A0226458;
+			remoteInfo = doc;
+		};
+		4D5FA0CC4DA942B39A26934E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		50B4D1736F7C4333BDA7C3B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		5C4A686C7DEC4654A3ADE626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		5F59E2F40B214A728F672E30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		5FE55242653F4534AB2B5C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		7EAF05AACD164FD982AE7198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E157ACDCFD04510AAA55D2B;
+			remoteInfo = Ptex_static;
+		};
+		82FAB98DB7B24716A66F359D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E157ACDCFD04510AAA55D2B;
+			remoteInfo = Ptex_static;
+		};
+		8CD0B3E005F3463DA1FD2345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		A2186FC4645B42019C2725D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		AE23F2C2CD5C4434BBEFA7B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43EC533DC9C8437FB29D5D73;
+			remoteInfo = wtest;
+		};
+		B8928B65C00D47D086339F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		BC244D1D74884545AC0A10BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		C37C65DDCB48403BA6F19CE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE72C7D91E7A40E28C603C40;
+			remoteInfo = ptxinfo;
+		};
+		C8D84DD753904BF9AE40F5B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C637182E8F644DE0AA995E19;
+			remoteInfo = ALL_BUILD;
+		};
+		D0748DBD0B784698B0518E5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E157ACDCFD04510AAA55D2B;
+			remoteInfo = Ptex_static;
+		};
+		D3353E3A712B4FEC8F3B448C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EA7DEA04CF46C4BC0C0A6B;
+			remoteInfo = ZERO_CHECK;
+		};
+		FDA78B0B2AAA4AAF9FB1F083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A5202386F847DEB03A793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40E4E9C3ECD74B7AA0AA3D98;
+			remoteInfo = rtest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041ADA9F4471418FA7826556 /* wtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = wtest; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2249A6FD924449B6BDEB8D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/halftest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halftest.cpp; path = src/tests/halftest.cpp; sourceTree = SOURCE_ROOT; };
+		0C99280E7B8F4025AD01C7CF /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexSeparableFilter.cpp; path = src/ptex/PtexSeparableFilter.cpp; sourceTree = SOURCE_ROOT; };
+		198E6C2EFFFB43B9981B5836 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexTriangleKernel.cpp; path = src/ptex/PtexTriangleKernel.cpp; sourceTree = SOURCE_ROOT; };
+		1B7F57208D6D46D6A6430B88 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexSeparableKernel.cpp; path = src/ptex/PtexSeparableKernel.cpp; sourceTree = SOURCE_ROOT; };
+		2C63FF8FBE2E4D64A22C88DE /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/ptxinfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ptxinfo.cpp; path = src/utils/ptxinfo.cpp; sourceTree = SOURCE_ROOT; };
+		37860103766B477C9A5FA467 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexReader.cpp; path = src/ptex/PtexReader.cpp; sourceTree = SOURCE_ROOT; };
+		3853D344D05543D5AD3C4102 /* rtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = rtest; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		410873A03DDF4DC3B7FA388A /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		49A0B2CA74FF42F8AC301A90 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4F06FC7018564709BF8B9D99 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/utils/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5314C526CA124A92A806DCAC /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5F7521A3357043DF979948C2 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/rtest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rtest.cpp; path = src/tests/rtest.cpp; sourceTree = SOURCE_ROOT; };
+		69E171B1FC3A41A29CE2137D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		748DF7526F164AE489F9B496 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		78FE1BC6B48341EF89731F9A /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexFilters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexFilters.cpp; path = src/ptex/PtexFilters.cpp; sourceTree = SOURCE_ROOT; };
+		7AEE42E0357343139E87883D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/doc/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/doc/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		87D3C62E636A4FB5A16771DF /* halftest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = halftest; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0936BCB7A843CA9EF96DE1 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexUtils.cpp; path = src/ptex/PtexUtils.cpp; sourceTree = SOURCE_ROOT; };
+		8B61D3E80E74400B82CA5622 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8BC2A67AA2A94F79A9CF6B6E /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9529B76BEBF44E188B53EE65 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		980CA7E5388B41E3B2B084B1 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A264716580DB49019427CC8F /* ftest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ftest; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		A644A9C48007434BBF9C6CD8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexCache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexCache.cpp; path = src/ptex/PtexCache.cpp; sourceTree = SOURCE_ROOT; };
+		A89F9274DDDA475FA77FD454 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexTriangleFilter.cpp; path = src/ptex/PtexTriangleFilter.cpp; sourceTree = SOURCE_ROOT; };
+		C1208AC43EC1457C8AAC24E8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/wtest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtest.cpp; path = src/tests/wtest.cpp; sourceTree = SOURCE_ROOT; };
+		C46CAA8C27164138BF43F0B0 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexHalf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexHalf.cpp; path = src/ptex/PtexHalf.cpp; sourceTree = SOURCE_ROOT; };
+		C62825748FBF476D8264CB2D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/doc/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/doc/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D7C01434F0B248E29A9B19B2 /* ptxinfo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ptxinfo; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C92B1BF3DE48FDA420FD2D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/ftest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ftest.cpp; path = src/tests/ftest.cpp; sourceTree = SOURCE_ROOT; };
+		DAA40F0A039E466FAF7E360E /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexWriter.cpp; path = src/ptex/PtexWriter.cpp; sourceTree = SOURCE_ROOT; };
+		E26E9DE852474C61BBE788FE /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/ptex/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E4B67CDB6ED44C8D94E68190 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F3EE4A9CBA45453793D6B4B6 /* Ptex_static */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPtex.a; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0447A460309C4EFDB3A1744D /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				9F34FEB9E62744AE99D438CB /* CMake Rules */,
+				E4B67CDB6ED44C8D94E68190 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		0B064A5BC9DF47DF85AEECBF /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				F83648AC702E4698A9843187 /* CMake Rules */,
+				980CA7E5388B41E3B2B084B1 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+		16A2191B862945D4A6A90F29 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				C1F4E6A536F8406AB40E85E7 /* CMake Rules */,
+				C62825748FBF476D8264CB2D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/doc/CMakeLists.txt */,
+			);
+			name = doc;
+			sourceTree = "<group>";
+		};
+		1A207AF765D844C081567563 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1C2695CEE0B84D94AA6143AE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C63FF8FBE2E4D64A22C88DE /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/ptxinfo.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		32238A8D3F0D4BA5B7BF92F3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1208AC43EC1457C8AAC24E8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/wtest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		428ED62B819340A788D2B987 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4AFF3CA87DBB4E01908BB99D /* doxygen */ = {
+			isa = PBXGroup;
+			children = (
+				EF40F6E6E7A94FC199EC2AF5 /* CMake Rules */,
+				7AEE42E0357343139E87883D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/doc/CMakeLists.txt */,
+			);
+			name = doxygen;
+			sourceTree = "<group>";
+		};
+		531CE27166604FD4AEB15DA4 /* halftest */ = {
+			isa = PBXGroup;
+			children = (
+				DACC24E4FAAA449E93B65680 /* Source Files */,
+				5314C526CA124A92A806DCAC /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = halftest;
+			sourceTree = "<group>";
+		};
+		559003EF90514457A78F3D00 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				F439B5EA26844A93A2DCA091 /* CMake Rules */,
+				9529B76BEBF44E188B53EE65 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		5E210B582933469B9E5EC687 /* ptxinfo */ = {
+			isa = PBXGroup;
+			children = (
+				1C2695CEE0B84D94AA6143AE /* Source Files */,
+				4F06FC7018564709BF8B9D99 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/CMakeLists.txt */,
+			);
+			name = ptxinfo;
+			sourceTree = "<group>";
+		};
+		6B3D524EA51E4018B01EC5DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3EE4A9CBA45453793D6B4B6 /* Ptex_static */,
+				D7C01434F0B248E29A9B19B2 /* ptxinfo */,
+				A264716580DB49019427CC8F /* ftest */,
+				87D3C62E636A4FB5A16771DF /* halftest */,
+				3853D344D05543D5AD3C4102 /* rtest */,
+				041ADA9F4471418FA7826556 /* wtest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DAC262C7AB14A4FADA920FD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7496F688E8BF488D9E0A062C /* ftest */ = {
+			isa = PBXGroup;
+			children = (
+				EDDD6078EE05463384AC3423 /* Source Files */,
+				69E171B1FC3A41A29CE2137D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = ftest;
+			sourceTree = "<group>";
+		};
+		78FDDF74DD5E4D7ABCCE1420 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A644A9C48007434BBF9C6CD8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexCache.cpp */,
+				78FE1BC6B48341EF89731F9A /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexFilters.cpp */,
+				C46CAA8C27164138BF43F0B0 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexHalf.cpp */,
+				37860103766B477C9A5FA467 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexReader.cpp */,
+				0C99280E7B8F4025AD01C7CF /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */,
+				1B7F57208D6D46D6A6430B88 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */,
+				A89F9274DDDA475FA77FD454 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */,
+				198E6C2EFFFB43B9981B5836 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */,
+				8B0936BCB7A843CA9EF96DE1 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexUtils.cpp */,
+				DAA40F0A039E466FAF7E360E /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexWriter.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		79E360954D784171AF942BAB /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				9D27E207AF5A46CE9F13269E /* CMake Rules */,
+				8B61D3E80E74400B82CA5622 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		7C4924182D1847248348E7A2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C0DFC8DD7C774410A6857076 /* ZERO_CHECK */,
+				F8D2656CD72C4967996BBF0D /* ALL_BUILD */,
+				87D2A2447637443D99F1ACF5 /* CTestDashboardTargets */,
+				A0314AA7C985428AB0EA945D /* ext */,
+				4AFF3CA87DBB4E01908BB99D /* doxygen */,
+				16A2191B862945D4A6A90F29 /* doc */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		81D5E4426CCB409C885F90D5 /* Ptex_static */ = {
+			isa = PBXGroup;
+			children = (
+				78FDDF74DD5E4D7ABCCE1420 /* Source Files */,
+				E26E9DE852474C61BBE788FE /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/CMakeLists.txt */,
+			);
+			name = Ptex_static;
+			sourceTree = "<group>";
+		};
+		87D2A2447637443D99F1ACF5 /* CTestDashboardTargets */ = {
+			isa = PBXGroup;
+			children = (
+				0447A460309C4EFDB3A1744D /* NightlyMemoryCheck */,
+				0B064A5BC9DF47DF85AEECBF /* Nightly */,
+				559003EF90514457A78F3D00 /* Continuous */,
+				79E360954D784171AF942BAB /* Experimental */,
+			);
+			name = CTestDashboardTargets;
+			sourceTree = "<group>";
+		};
+		9AE0154017DC48D683C7B8C0 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F7521A3357043DF979948C2 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/rtest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9D27E207AF5A46CE9F13269E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9F34FEB9E62744AE99D438CB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A0314AA7C985428AB0EA945D /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				81D5E4426CCB409C885F90D5 /* Ptex_static */,
+				5E210B582933469B9E5EC687 /* ptxinfo */,
+				531CE27166604FD4AEB15DA4 /* halftest */,
+				7496F688E8BF488D9E0A062C /* ftest */,
+				DDED3B05A74C4185A03113C9 /* rtest */,
+				E86A8E65D15B4F0C922F05FD /* wtest */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+		C0DFC8DD7C774410A6857076 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				1A207AF765D844C081567563 /* CMake Rules */,
+				8BC2A67AA2A94F79A9CF6B6E /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		C1F4E6A536F8406AB40E85E7 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DACC24E4FAAA449E93B65680 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A2249A6FD924449B6BDEB8D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/halftest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DDED3B05A74C4185A03113C9 /* rtest */ = {
+			isa = PBXGroup;
+			children = (
+				9AE0154017DC48D683C7B8C0 /* Source Files */,
+				748DF7526F164AE489F9B496 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = rtest;
+			sourceTree = "<group>";
+		};
+		E86A8E65D15B4F0C922F05FD /* wtest */ = {
+			isa = PBXGroup;
+			children = (
+				32238A8D3F0D4BA5B7BF92F3 /* Source Files */,
+				49A0B2CA74FF42F8AC301A90 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = wtest;
+			sourceTree = "<group>";
+		};
+		EDDD6078EE05463384AC3423 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7C92B1BF3DE48FDA420FD2D /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/ftest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EF40F6E6E7A94FC199EC2AF5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F0862A9A4EA94C46A78AAAA7 = {
+			isa = PBXGroup;
+			children = (
+				7C4924182D1847248348E7A2 /* Sources */,
+				428ED62B819340A788D2B987 /* Resources */,
+				6B3D524EA51E4018B01EC5DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F439B5EA26844A93A2DCA091 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F83648AC702E4698A9843187 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F8D2656CD72C4967996BBF0D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				6DAC262C7AB14A4FADA920FD /* CMake Rules */,
+				410873A03DDF4DC3B7FA388A /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40E4E9C3ECD74B7AA0AA3D98 /* rtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4749819BF0D84ACA82ABF499 /* Build configuration list for PBXNativeTarget "rtest" */;
+			buildPhases = (
+				11DA30985B2842C7957D7D60 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65F42F8002CF4CDF904C9BC2 /* PBXTargetDependency */,
+				AE474B912213410D908216F1 /* PBXTargetDependency */,
+			);
+			name = rtest;
+			productName = rtest;
+			productReference = 3853D344D05543D5AD3C4102 /* rtest */;
+			productType = "com.apple.product-type.tool";
+		};
+		43EC533DC9C8437FB29D5D73 /* wtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC49D6A787F949B09523E44A /* Build configuration list for PBXNativeTarget "wtest" */;
+			buildPhases = (
+				DD2BE5EF07BE49F1A6215473 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8B106331564477920EA3C3 /* PBXTargetDependency */,
+				6CFFB6395579451D89BA954A /* PBXTargetDependency */,
+			);
+			name = wtest;
+			productName = wtest;
+			productReference = 041ADA9F4471418FA7826556 /* wtest */;
+			productType = "com.apple.product-type.tool";
+		};
+		6E157ACDCFD04510AAA55D2B /* Ptex_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 979392006C1E4DEDB9BF9D17 /* Build configuration list for PBXNativeTarget "Ptex_static" */;
+			buildPhases = (
+				B37DD3040739499D99C9EB0F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C382DF1A1054442B713A25E /* PBXTargetDependency */,
+			);
+			name = Ptex_static;
+			productName = Ptex_static;
+			productReference = F3EE4A9CBA45453793D6B4B6 /* Ptex_static */;
+			productType = "com.apple.product-type.library.static";
+		};
+		797D15849FC14400A1A06599 /* ftest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D25331579448B6B018DAF3 /* Build configuration list for PBXNativeTarget "ftest" */;
+			buildPhases = (
+				217797B9846E44F9A98A3BF1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				691CC799A5D14710A9F99D73 /* PBXTargetDependency */,
+				7E0D4CCE954342D39F8F3EFC /* PBXTargetDependency */,
+			);
+			name = ftest;
+			productName = ftest;
+			productReference = A264716580DB49019427CC8F /* ftest */;
+			productType = "com.apple.product-type.tool";
+		};
+		BE72C7D91E7A40E28C603C40 /* ptxinfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F22541C51542E8BBEDCA32 /* Build configuration list for PBXNativeTarget "ptxinfo" */;
+			buildPhases = (
+				770424B08FD54990AF8D7B88 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2A47E020EF041C89E555E5F /* PBXTargetDependency */,
+				E28C05C3370F49BDA9E6D782 /* PBXTargetDependency */,
+			);
+			name = ptxinfo;
+			productName = ptxinfo;
+			productReference = D7C01434F0B248E29A9B19B2 /* ptxinfo */;
+			productType = "com.apple.product-type.tool";
+		};
+		EF975AB3DD4D4F67A105C455 /* halftest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDF1FF85D2B458CAA744977 /* Build configuration list for PBXNativeTarget "halftest" */;
+			buildPhases = (
+				756A2A9F3FCD43BD8BED8869 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC109F2D16E451FA136FFCB /* PBXTargetDependency */,
+				93E4E5EE1B66433FB273D6EF /* PBXTargetDependency */,
+			);
+			name = halftest;
+			productName = halftest;
+			productReference = 87D3C62E636A4FB5A16771DF /* halftest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47A5202386F847DEB03A793E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 6D141675432E41ABA75FC5EF /* Build configuration list for PBXProject "ptex" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				0962B935515C4F3C95486CB7 /* Debug */,
+				76E1E55C4F004A9C932279E9 /* Release */,
+				5B5E6585E68A4E9CB6445BE8 /* MinSizeRel */,
+				F5FA9075A2FF4A1AAFEAA1D8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = F0862A9A4EA94C46A78AAAA7;
+			projectDirPath = ../../../../src/ext/ptex;
+			projectRoot = "";
+			targets = (
+				C637182E8F644DE0AA995E19 /* ALL_BUILD */,
+				BA6DF883CFE54E43929A11BD /* Continuous */,
+				7F891B56B1D74619B983212D /* Experimental */,
+				922D728CCD1E454FA8CCE5B1 /* Nightly */,
+				D54D191E9CBE443B8BA356A0 /* NightlyMemoryCheck */,
+				8356F834ADBB49CAAA0C131B /* RUN_TESTS */,
+				D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */,
+				178EB044966C4766BAA1FF97 /* install */,
+				3DB29E7182A54E8693501EE9 /* package */,
+				6E157ACDCFD04510AAA55D2B /* Ptex_static */,
+				BE72C7D91E7A40E28C603C40 /* ptxinfo */,
+				797D15849FC14400A1A06599 /* ftest */,
+				EF975AB3DD4D4F67A105C455 /* halftest */,
+				40E4E9C3ECD74B7AA0AA3D98 /* rtest */,
+				43EC533DC9C8437FB29D5D73 /* wtest */,
+				6AC332235F0B4B94A0226458 /* doc */,
+				6726094753284BF3994DFCB4 /* doxygen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D0F225CB2F4025849C3BC5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		14025390E2964407A588179B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		17F379D14F4D4F78940BFE5B /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		18F216C0D65E41B28F493906 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1AB6D136781A424392899012 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		204173AF7A294FD881996D0D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		2905ECA117FC4B8A9D2E7C16 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3F9C34E8782C4409A6B68FB8 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5EBA5D8E24CD428EABDF2B51 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7BA921AD7E354DF4ABF779AF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7F1C78969DA74D1F8BEBF2DA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/Nightly_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		83FBE2BE8197497DBBB41F48 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8D2D47EDFE5E43729FEBFA7C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/Experimental_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8E0982FF235D49A2B007C4B4 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9FB41412EB8940CAB308F425 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A1D01E18856D4262B7D43EDE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc/CMakeScripts/doxygen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A2766BED445347B6A26CA3AD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc/CMakeScripts/doc_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A83D956C2F97429D847A9F2B /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/NightlyMemoryCheck_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B5BDE0678051414DA7D74FFB = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		BFB21A06D18A4FB5A9B35B14 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C2AD37D10360445C8AB7EA11 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F6581371B6134063A3396D77 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex -f /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/CMakeScripts/Continuous_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11DA30985B2842C7957D7D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBAA8B2F9E344AA9FEF2EE4 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/rtest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217797B9846E44F9A98A3BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F56C0B6E6BF4B3AB64EF081 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/ftest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756A2A9F3FCD43BD8BED8869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385F232A4774BF3A4C7ABF2 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/halftest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		770424B08FD54990AF8D7B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557C3FEE75444FC2822F9925 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/utils/ptxinfo.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37DD3040739499D99C9EB0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2EFCE9025E42318AA4B4A8 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexCache.cpp */,
+				87BA91ECDC8D49FE8F02E199 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexFilters.cpp */,
+				CECFAB9C98974B86903C15F2 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexHalf.cpp */,
+				796FAA13081E4C1C94B87757 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexReader.cpp */,
+				F526A0F95FDD4EC39D617CCC /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */,
+				814591EE6E47412D8D074F9C /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */,
+				42CE530A131A41E4A8485762 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */,
+				6311E01FFF8C4838A4F3DDC9 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */,
+				E401F5ADC7334B6E9C8A702C /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexUtils.cpp */,
+				B8EDB8DB06644A438FE11385 /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex/PtexWriter.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2BE5EF07BE49F1A6215473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A817EA9A767F47BCA2B8AD3C /* /Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/tests/wtest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C815611CCD4A32AA3C3AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = B8928B65C00D47D086339F15 /* PBXContainerItemProxy */;
+		};
+		1BC2EEDCC50743A6BCD447C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF975AB3DD4D4F67A105C455 /* halftest */;
+			targetProxy = 1566F3674BEE45BD8CE9F3BC /* PBXContainerItemProxy */;
+		};
+		397749BBDBD049F2B4601748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 5C4A686C7DEC4654A3ADE626 /* PBXContainerItemProxy */;
+		};
+		3F8B106331564477920EA3C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E157ACDCFD04510AAA55D2B /* Ptex_static */;
+			targetProxy = 82FAB98DB7B24716A66F359D /* PBXContainerItemProxy */;
+		};
+		4260C99E25974831BECBAB1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 2BD7ACA975E74D9482D52826 /* PBXContainerItemProxy */;
+		};
+		54F98ACBAA13491EAD89DB1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C637182E8F644DE0AA995E19 /* ALL_BUILD */;
+			targetProxy = C8D84DD753904BF9AE40F5B1 /* PBXContainerItemProxy */;
+		};
+		55F85E0D361D4B30908A9CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = BC244D1D74884545AC0A10BA /* PBXContainerItemProxy */;
+		};
+		5C382DF1A1054442B713A25E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 5FE55242653F4534AB2B5C4D /* PBXContainerItemProxy */;
+		};
+		6561DF5276FE4B2FA7590210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AC332235F0B4B94A0226458 /* doc */;
+			targetProxy = 4C85F076A3A448E99F7D0338 /* PBXContainerItemProxy */;
+		};
+		65F42F8002CF4CDF904C9BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E157ACDCFD04510AAA55D2B /* Ptex_static */;
+			targetProxy = 2AB24A7B7E6E49E991ACD64F /* PBXContainerItemProxy */;
+		};
+		68D1FD27636B4D2793CA03EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 5F59E2F40B214A728F672E30 /* PBXContainerItemProxy */;
+		};
+		691CC799A5D14710A9F99D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E157ACDCFD04510AAA55D2B /* Ptex_static */;
+			targetProxy = D0748DBD0B784698B0518E5F /* PBXContainerItemProxy */;
+		};
+		6CFFB6395579451D89BA954A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = A2186FC4645B42019C2725D1 /* PBXContainerItemProxy */;
+		};
+		77CD2608614949808CE1FF82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE72C7D91E7A40E28C603C40 /* ptxinfo */;
+			targetProxy = C37C65DDCB48403BA6F19CE9 /* PBXContainerItemProxy */;
+		};
+		7E0D4CCE954342D39F8F3EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 274CF9B1F47E4B69A6D77E48 /* PBXContainerItemProxy */;
+		};
+		8CC109F2D16E451FA136FFCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E157ACDCFD04510AAA55D2B /* Ptex_static */;
+			targetProxy = 7EAF05AACD164FD982AE7198 /* PBXContainerItemProxy */;
+		};
+		93E4E5EE1B66433FB273D6EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 28489A120F304FC0B32C98C4 /* PBXContainerItemProxy */;
+		};
+		9D81B7CDD7964EF9A80075BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43EC533DC9C8437FB29D5D73 /* wtest */;
+			targetProxy = AE23F2C2CD5C4434BBEFA7B3 /* PBXContainerItemProxy */;
+		};
+		A5005DCA2FE946F791E7D223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 50B4D1736F7C4333BDA7C3B3 /* PBXContainerItemProxy */;
+		};
+		AE474B912213410D908216F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = D3353E3A712B4FEC8F3B448C /* PBXContainerItemProxy */;
+		};
+		B0C9DFDFAC1A44E9B874C138 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E157ACDCFD04510AAA55D2B /* Ptex_static */;
+			targetProxy = 1D1D715B53AC455EACA269CD /* PBXContainerItemProxy */;
+		};
+		C2A47E020EF041C89E555E5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E157ACDCFD04510AAA55D2B /* Ptex_static */;
+			targetProxy = 49389E4AA0DE4AE48D9C478C /* PBXContainerItemProxy */;
+		};
+		C6D929390B8A49DB8D077276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 8CD0B3E005F3463DA1FD2345 /* PBXContainerItemProxy */;
+		};
+		CF742421D81A482A8E318D09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C637182E8F644DE0AA995E19 /* ALL_BUILD */;
+			targetProxy = 322778A9A0B04EB38D165CC2 /* PBXContainerItemProxy */;
+		};
+		D27923919B8A48F2B003E884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40E4E9C3ECD74B7AA0AA3D98 /* rtest */;
+			targetProxy = FDA78B0B2AAA4AAF9FB1F083 /* PBXContainerItemProxy */;
+		};
+		DAA436683F9648E28A939E67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797D15849FC14400A1A06599 /* ftest */;
+			targetProxy = 2E57DE09C414404DA123BA79 /* PBXContainerItemProxy */;
+		};
+		E28C05C3370F49BDA9E6D782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EA7DEA04CF46C4BC0C0A6B /* ZERO_CHECK */;
+			targetProxy = 4D5FA0CC4DA942B39A26934E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07525CB84FF14C6BAC3AA3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		09E6FBF8D51343CCB223FE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Release/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		0BF80431F77D4433BC76C60D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		0C4289B0101D4BD68BE8A956 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doxygen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		0E6EE07EC5534717BA18D95C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		1135A7D610424C358BD8B58D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/build";
+			};
+			name = RelWithDebInfo;
+		};
+		22888F47356E4AA59123FF3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doxygen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		23312AA4EBEA4AFC936FF271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		2378419D1BF5498A8B2C94F7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		2573C51D0652413F8A4081AC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		2A7EE15C498D49B58D868B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		2ED2FA30B9DA413CA128B096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		2F4ED27DC50B414AA98150FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		317EA39B8D9442CB9535DF43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		340F828FE43B47078B33B40A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/build";
+			};
+			name = Debug;
+		};
+		3495B84BA580445C883487DC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		38E4EDBCA16245D18D0CDDC1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		399B1AD001964B218EB8A458 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		3A8DEF2E5064446B812AF59C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		3C3EF067495F4BBAAAF57A6F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/build";
+			};
+			name = MinSizeRel;
+		};
+		4E2C9170C29E48748A62463C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		4E2DC2063CA847B9A2884D31 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		50799EBB264145309808796C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		51498EAF5B064B8080BF4982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		564C1913E7B1474A837F667C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		5CD767BA032646498381E349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Debug/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		5ED38F2EE9FF4BB3B8D0BE02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		5F0D27436D4747F7A369B478 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		60CB8054452844309BE8A04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		636C515AB2C349ED88FAABAE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		6CAEE81509AB4677A5A851D6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		6D239A17378D40F389DC538C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		70DC9A4337474AFA9275534D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		74F66B3072CC4F37963C26D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		7689681CB5E44EF280F066FE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		76B66C66F75F49ED91609EE0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		773E05204EC943B19C9B26D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Debug/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		7C10268363044DC8BBCB3EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		80679BB22772482DAB08A8CA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		81F14CFF45CE4C24BB8CD76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Debug/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		8413670709D540C68F0575E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Debug/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		849CD15F747945C7814A42D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		85CF471AAB924ABB8EC912CB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		899D7766259E490DA48FEB74 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doxygen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		8A2B9DA1289B4BF6A848B81B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		8A2F465BD1CB4EB6BD05E906 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		8BC440F8EEFD4FACB7ADD478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doxygen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		8CE6F6624EF74985B7C0F2FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		8F6AE794CB1146A6AD1766DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		925F37E5F9D54D808983F5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		96EFCD68E9BF4C7ABF1507B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		98CBF5D48BC04A7FBBA10F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/build";
+			};
+			name = Release;
+		};
+		9CAC739DD0534200971FAC88 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		9E6FFC0819984F1584EC8AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Release/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		9FE30A1E8FBF4A7A83F3B7A1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		A2F6E30BD2774F0CBC6E48D0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		A490CDFA3A5E49B0895DA16F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		A8637712A4134606AC45D590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		AFFCB8FB277646C181F1FFF6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		B3CF90D8FC04401EAFC7604E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		BC4CC836482047E7BDC5E5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Release/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		CC2E284F72194CA3A4483862 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		D6D3A25BE3A14D7C8280DAC9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		DB5918775E9540A8A606B5A4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		DFC52787451146B691888608 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		EF807CE748A3440E97F78956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		EFEA50DF5CA84DA4AEEE4B12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Debug/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		F02EDC55040A44A291F9D409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/doc";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		F26E97EF5771438897C62B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Release/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		F7BD78362D754EC5B4CF60D6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		FA31EC5B31FC4FF6B2D4A45B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		FF0A06AC5F434A3693650045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PTEX_STATIC, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhenyiliu/anaconda3/include, /usr/local/Cellar/gsl/2.5/include, "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Imath", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Half", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/IlmBase/Iex", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/openexr/OpenEXR/IlmImf", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/IlmBase/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/openexr/OpenEXR/config", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/glog/src", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/glog", "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/src/ext/ptex/src/ptex", );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Users/zhenyiliu/anaconda3/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\(\(noinline\)\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/ptex/Release/libPtex.a /Users/zhenyiliu/anaconda3/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhenyiliu/git_repo/pbrt-v3-spectral/build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20FF57D85AA74D33A4E0B9BE /* Build configuration list for PBXAggregateTarget "doc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F02EDC55040A44A291F9D409 /* Debug */,
+				EF807CE748A3440E97F78956 /* Release */,
+				A2F6E30BD2774F0CBC6E48D0 /* MinSizeRel */,
+				6D239A17378D40F389DC538C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4749819BF0D84ACA82ABF499 /* Build configuration list for PBXNativeTarget "rtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEA50DF5CA84DA4AEEE4B12 /* Debug */,
+				9E6FFC0819984F1584EC8AE5 /* Release */,
+				8A2B9DA1289B4BF6A848B81B /* MinSizeRel */,
+				0BF80431F77D4433BC76C60D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4916C25EB3FC4F658F8CB848 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A7EE15C498D49B58D868B32 /* Debug */,
+				8CE6F6624EF74985B7C0F2FE /* Release */,
+				8A2F465BD1CB4EB6BD05E906 /* MinSizeRel */,
+				38E4EDBCA16245D18D0CDDC1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5C6EE98B8CCE42DC9B57856F /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C10268363044DC8BBCB3EFD /* Debug */,
+				70DC9A4337474AFA9275534D /* Release */,
+				D6D3A25BE3A14D7C8280DAC9 /* MinSizeRel */,
+				85CF471AAB924ABB8EC912CB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		665F280A047848A7ADBFEE7B /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23312AA4EBEA4AFC936FF271 /* Debug */,
+				849CD15F747945C7814A42D8 /* Release */,
+				0E6EE07EC5534717BA18D95C /* MinSizeRel */,
+				DB5918775E9540A8A606B5A4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6D141675432E41ABA75FC5EF /* Build configuration list for PBXProject "ptex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340F828FE43B47078B33B40A /* Debug */,
+				98CBF5D48BC04A7FBBA10F09 /* Release */,
+				3C3EF067495F4BBAAAF57A6F /* MinSizeRel */,
+				1135A7D610424C358BD8B58D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		85D25331579448B6B018DAF3 /* Build configuration list for PBXNativeTarget "ftest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD767BA032646498381E349 /* Debug */,
+				F26E97EF5771438897C62B7B /* Release */,
+				F7BD78362D754EC5B4CF60D6 /* MinSizeRel */,
+				2378419D1BF5498A8B2C94F7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8911BF17CB41437E8E1A183C /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8637712A4134606AC45D590 /* Debug */,
+				5ED38F2EE9FF4BB3B8D0BE02 /* Release */,
+				76B66C66F75F49ED91609EE0 /* MinSizeRel */,
+				80679BB22772482DAB08A8CA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A8FEB0D05F247BB9337DC78 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925F37E5F9D54D808983F5A2 /* Debug */,
+				60CB8054452844309BE8A04D /* Release */,
+				7689681CB5E44EF280F066FE /* MinSizeRel */,
+				2573C51D0652413F8A4081AC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		979392006C1E4DEDB9BF9D17 /* Build configuration list for PBXNativeTarget "Ptex_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07525CB84FF14C6BAC3AA3F8 /* Debug */,
+				3A8DEF2E5064446B812AF59C /* Release */,
+				3495B84BA580445C883487DC /* MinSizeRel */,
+				B3CF90D8FC04401EAFC7604E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC49D6A787F949B09523E44A /* Build configuration list for PBXNativeTarget "wtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8413670709D540C68F0575E0 /* Debug */,
+				FF0A06AC5F434A3693650045 /* Release */,
+				DFC52787451146B691888608 /* MinSizeRel */,
+				5F0D27436D4747F7A369B478 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3EAA9EF1002499890B8A8F0 /* Build configuration list for PBXAggregateTarget "doxygen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC440F8EEFD4FACB7ADD478 /* Debug */,
+				22888F47356E4AA59123FF3D /* Release */,
+				0C4289B0101D4BD68BE8A956 /* MinSizeRel */,
+				899D7766259E490DA48FEB74 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C0F85E402FC645A7A581A983 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51498EAF5B064B8080BF4982 /* Debug */,
+				8F6AE794CB1146A6AD1766DB /* Release */,
+				FA31EC5B31FC4FF6B2D4A45B /* MinSizeRel */,
+				564C1913E7B1474A837F667C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CB8F58E858B049678FDCA5D3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ED2FA30B9DA413CA128B096 /* Debug */,
+				4E2C9170C29E48748A62463C /* Release */,
+				399B1AD001964B218EB8A458 /* MinSizeRel */,
+				6CAEE81509AB4677A5A851D6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CCC3B25EED2A4E4C8D4C54A4 /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4ED27DC50B414AA98150FC /* Debug */,
+				96EFCD68E9BF4C7ABF1507B0 /* Release */,
+				AFFCB8FB277646C181F1FFF6 /* MinSizeRel */,
+				50799EBB264145309808796C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D5F22541C51542E8BBEDCA32 /* Build configuration list for PBXNativeTarget "ptxinfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F14CFF45CE4C24BB8CD76B /* Debug */,
+				09E6FBF8D51343CCB223FE65 /* Release */,
+				CC2E284F72194CA3A4483862 /* MinSizeRel */,
+				636C515AB2C349ED88FAABAE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ECDF1FF85D2B458CAA744977 /* Build configuration list for PBXNativeTarget "halftest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773E05204EC943B19C9B26D9 /* Debug */,
+				BC4CC836482047E7BDC5E5D6 /* Release */,
+				4E2DC2063CA847B9A2884D31 /* MinSizeRel */,
+				A490CDFA3A5E49B0895DA16F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F368A16CCA9A4B629BE96864 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317EA39B8D9442CB9535DF43 /* Debug */,
+				74F66B3072CC4F37963C26D9 /* Release */,
+				9FE30A1E8FBF4A7A83F3B7A1 /* MinSizeRel */,
+				9CAC739DD0534200971FAC88 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47A5202386F847DEB03A793E /* Project object */;
+}
