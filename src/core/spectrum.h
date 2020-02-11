@@ -48,8 +48,8 @@ namespace pbrt {
 //static const int sampledLambdaStart = 395;
 //static const int sampledLambdaEnd = 705;
 //static const int nSpectralSamples = 31;
-static const int sampledLambdaStart = 465;
-static const int sampledLambdaEnd = 475;
+static const int sampledLambdaStart = 475;
+static const int sampledLambdaEnd = 485;
 static const int nSpectralSamples = 1;
 extern bool SpectrumSamplesSorted(const Float *lambda, const Float *vals,
                                   int n);
